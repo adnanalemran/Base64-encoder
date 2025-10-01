@@ -1,0 +1,31 @@
+# Ignore everything by default
+*
+
+# But track these specific files
+!.npmrc
+!package.json
+!package-lock.json
+!.gitignore
+
+# Always ignore node_modules even if accidentally included
+node_modules/
+# Always ignore environment files
+.env*
+# Ignore log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

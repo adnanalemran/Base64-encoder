@@ -1,0 +1,16 @@
+{
+  "name": "base64-encoder",
+  "version": "1.0.0",
+  "description": "create by adnan",
+  "license": "ISC",
+  "author": "adnan al emran",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "set": "node set-npm-auth.js",
+    "test": "node test-auth.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
