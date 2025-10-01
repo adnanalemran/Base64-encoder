@@ -6,6 +6,7 @@
 !package.json
 !package-lock.json
 !.gitignore
+!README.md
 
 # Always ignore node_modules even if accidentally included
 node_modules/
