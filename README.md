@@ -1,10 +1,10 @@
-# Base64 Encoder
+# Base64 Encoder & NPM Token Manager
 
-A Node.js project for Base64 encoding operations with NPM authentication setup.
+A React-based web application for Base64 encoding operations with NPM authentication setup and token management.
 
 ## 📋 Description
 
-Created by **Adnan Al-Emran**, this project provides Base64 encoding functionality along with NPM authentication configuration utilities.
+Created by **Adnan Al-Emran**, this project provides a modern React UI for Base64 encoding/decoding functionality along with NPM authentication configuration utilities and token management.
 
 ## 🚀 Getting Started
 
@@ -34,32 +34,77 @@ The project includes NPM authentication setup. Make sure to configure your `.npm
 
 ## 📜 Available Scripts
 
+### Development Scripts
+- **`npm run dev`** - Start the React development server
+- **`npm run build`** - Build the React app for production
+- **`npm run preview`** - Preview the production build
+- **`npm start`** - Alias for `npm run dev`
+
+### Authentication Scripts
 - **`npm run set`** - Runs the NPM authentication setup script
 - **`npm run test`** - Runs the authentication test script
 
 ## 🛠️ Usage
 
-### Setting up NPM Authentication
+### Development Server
+
+```bash
+npm run dev
+```
+
+This will start the React development server at `http://localhost:3000`
+
+### Setting up NPM Authentication (CLI)
 
 ```bash
 npm run set
 ```
 
-### Testing Authentication
+### Testing Authentication (CLI)
 
 ```bash
 npm run test
 ```
 
+## 🎨 React UI Features
+
+### 🔄 Base64 Encoder/Decoder
+- **Encode Text**: Convert plain text to Base64 format
+- **Decode Base64**: Convert Base64 strings back to readable text
+- **Copy to Clipboard**: Easy copying of results
+- **Mode Toggle**: Switch between encode and decode modes
+- **Real-time Processing**: Instant encoding/decoding
+
+### 🔑 NPM Token Manager
+- **Token Testing**: Test NPM authentication tokens
+- **Token Storage**: Save and manage multiple tokens locally
+- **Registry Configuration**: Support for custom NPM registries
+- **Generate .npmrc**: Create NPM configuration files
+- **Download/Copy**: Export configurations for use
+
 ## 📁 Project Structure
 
 ```text
 Base64-encoder/
-├── .gitignore          # Git ignore configuration
-├── .npmrc              # NPM registry configuration
-├── package.json        # Project metadata and dependencies
-├── package-lock.json   # Dependency lock file
-└── README.md          # Project documentation
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Base64Encoder.jsx    # Base64 encoding/decoding component
+│   │   └── TokenManager.jsx     # NPM token management component
+│   ├── App.jsx                  # Main React application
+│   ├── App.css                  # Application styles
+│   ├── main.jsx                 # React entry point
+│   └── index.css                # Global styles
+├── scripts/
+│   ├── set-npm-auth.js          # NPM authentication setup script
+│   └── test-auth.js             # NPM authentication test script
+├── .gitignore                   # Git ignore configuration
+├── .npmrc                       # NPM registry configuration
+├── index.html                   # HTML template
+├── package.json                 # Project metadata and dependencies
+├── package-lock.json            # Dependency lock file
+├── vite.config.js               # Vite configuration
+└── README.md                    # Project documentation
 ```
 
 ## 🔐 Security
@@ -70,7 +115,17 @@ Base64-encoder/
 
 ## 📦 Dependencies
 
+### Runtime Dependencies
+- **react**: ^18.2.0 - React library for building user interfaces
+- **react-dom**: ^18.2.0 - React DOM rendering
 - **dotenv**: ^17.2.3 - Environment variable management
+- **axios**: ^1.6.0 - HTTP client for API requests
+
+### Development Dependencies
+- **@vitejs/plugin-react**: ^4.2.1 - Vite React plugin
+- **vite**: ^5.0.8 - Next generation frontend tooling
+- **@types/react**: ^18.2.43 - TypeScript definitions for React
+- **@types/react-dom**: ^18.2.17 - TypeScript definitions for React DOM
 
 ## 👨‍💻 Author
 

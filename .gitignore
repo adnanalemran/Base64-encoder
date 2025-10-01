@@ -7,9 +7,15 @@
 !package-lock.json
 !.gitignore
 !README.md
+!index.html
+!vite.config.js
+!src/
+!src/**
 
 # Always ignore node_modules even if accidentally included
 node_modules/
+# Always ignore build output
+dist/
 # Always ignore environment files
 .env*
 # Ignore log files
